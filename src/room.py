@@ -5,7 +5,6 @@ class Room():
     def __init__(self, name, desc):
         self.name = name
         self.desc = desc
-        self.positions = ['nope', 'nope', 'nope', 'nope']
         self.n_to = None
         self.e_to = None
         self.s_to = None
@@ -15,7 +14,4 @@ class Room():
         return f"{self.name} :: {self.desc}"
 
     def options(self):
-        print(f"North: {self.n_to}")
-        print(f"East: {self.e_to}")
-        print(f"South: {self.s_to}")
-        print(f"West: {self.w_to}")
+        return [self.n_to, self.e_to, self.s_to, self.w_to]

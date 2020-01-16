@@ -3,11 +3,12 @@
 
 
 class Player():
-    def __init__(self, location='outside'):
-        self.location = location
+    def __init__(self, name, currentRoom):
+        self.name = name
+        self.currentRoom = currentRoom
 
-    def move(self, location):
-        self.location = location
+    def move(self, currentRoom):
+        self.currentRoom = currentRoom
 
     def where(self):
-        print(self.location)
+        print(self.currentRoom)
